@@ -49,21 +49,21 @@ The dataset contains information about recipes and user interactions. Below is a
 
 3. **Model Selection**:
    - Evaluated multiple classification models:
-     - Logistic Regression
-     - Decision Tree Classifier
-     - RandomForestClassifier
+     - SGD Classifier
      - SVM
-     - GradientBoostingClassifier
-   - Selected **RandomForestClassifier** as the best-performing model due to its robustness and high accuracy.
+     - Perceptron 
+     - Naive Bayes
+     - KNN
+   - Selected **SGD Classifier** as the best-performing model due to its robustness and high accuracy.
 
-4. **Evaluation**:
+5. **Evaluation**:
    - Assessed model performance using metrics such as accuracy, confusion matrix, and classification report.
    - Used 5-fold cross-validation to ensure reliability and prevent overfitting.
 
 ---
 
 ## **Results**
-- The **RandomForestClassifier** achieved high accuracy, effectively predicting recipe popularity across all categories.
+- The **SGD Classifier** achieved high accuracy, effectively predicting recipe popularity across all categories.
 - Feature importance analysis revealed that `thumbs_up`, `reply_count`, and `user_reputation` were the most influential factors in predicting popularity.
 - The application of **SMOTE** improved the model’s ability to classify minority categories (`medium` and `low`) effectively.
 
